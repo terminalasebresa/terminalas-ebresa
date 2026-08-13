@@ -1,0 +1,8 @@
+# Raw/unprocessed source photos - optimized copies live in images/
+Media/
+
+# Self-contained single-file exports - not needed for the live multi-file site
+standalone/
+
+# Old zip exports
+*.zip
