@@ -318,6 +318,15 @@ section { padding-block: var(--sp-9); }
   .service-card.featured h3 { font-size: 1.15rem; }
 }
 
+/* Regular-size service card with a photo background (no size/badge, unlike .featured) */
+.service-card.has-photo { padding: var(--sp-5); overflow: hidden; color: #fff; border-color: transparent; min-height: 220px; }
+.service-card.has-photo:hover { transform: translateY(-3px); box-shadow: var(--shadow-l); }
+.service-card.has-photo .featured-content { margin-top: auto; padding-top: var(--sp-5); }
+.service-card.has-photo h3 { color: #fff; }
+.service-card.has-photo p { color: rgba(255,255,255,0.82); }
+.service-card.has-photo .service-icon { background: rgba(255,255,255,0.14); color: #7CE3A8; }
+.service-card.has-photo:hover .service-icon { background: #7CE3A8; color: var(--c-dark); transform: none; }
+
 /* =========================================================
    Infrastructure gallery
    ========================================================= */
