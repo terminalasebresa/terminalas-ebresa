@@ -14,7 +14,7 @@
       formInvalid: 'Prašome patikrinti pažymėtus laukus ir bandyti dar kartą.',
       sending: 'Siunčiama…',
       success: 'Ačiū! Jūsų užklausa gauta — susisieksime artimiausiu metu.',
-      sendError: 'Nepavyko išsiųsti užklausos. Bandykite dar kartą arba rašykite el. paštu lukas@ebresa.lt.'
+      sendError: 'Nepavyko išsiųsti užklausos. Bandykite dar kartą arba rašykite el. paštu kybartai@ebresa.lt.'
     },
     en: {
       fieldRequired: 'This field is required.',
@@ -23,7 +23,7 @@
       formInvalid: 'Please check the highlighted fields and try again.',
       sending: 'Sending…',
       success: 'Thank you! Your request has been received — we’ll get back to you shortly.',
-      sendError: 'Couldn’t send your request. Please try again or email lukas@ebresa.lt.'
+      sendError: 'Couldn’t send your request. Please try again or email kybartai@ebresa.lt.'
     },
     pl: {
       fieldRequired: 'To pole jest wymagane.',
@@ -32,7 +32,7 @@
       formInvalid: 'Sprawdź zaznaczone pola i spróbuj ponownie.',
       sending: 'Wysyłanie…',
       success: 'Dziękujemy! Otrzymaliśmy Twoje zapytanie — skontaktujemy się wkrótce.',
-      sendError: 'Nie udało się wysłać zapytania. Spróbuj ponownie lub napisz na lukas@ebresa.lt.'
+      sendError: 'Nie udało się wysłać zapytania. Spróbuj ponownie lub napisz na kybartai@ebresa.lt.'
     }
   };
 
