@@ -69,10 +69,9 @@
   --------------------------------------------------------- */
   var CONSENT_KEY = 'ebresa_cookie_consent';
 
-  // TODO: paste your GA4 Measurement ID here (e.g. "G-XXXXXXXXXX") to
-  // activate analytics once a visitor accepts the "Analytics" category.
-  // Until this is filled in, loadAnalytics() intentionally does nothing.
-  var GA_MEASUREMENT_ID = '';
+  // GA4 Measurement ID. Analytics only loads once a visitor accepts the
+  // "Analytics" cookie category — see loadAnalytics()/applyConsent() below.
+  var GA_MEASUREMENT_ID = 'G-24P4DNX3M9';
 
   function getConsent() {
     try {
