@@ -464,12 +464,12 @@ section { padding-block: var(--sp-9); }
 
 .social-link {
   display: inline-flex; align-items: center; justify-content: center;
-  width: 32px; height: 32px; border-radius: 50%; flex-shrink: 0;
-  background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.75);
-  transition: background-color .15s var(--ease), color .15s var(--ease), transform .15s var(--ease);
+  width: 36px; height: 36px; border-radius: 50%; flex-shrink: 0;
+  background: rgba(255,255,255,0.16); border: 1px solid rgba(255,255,255,0.28); color: #fff;
+  transition: background-color .15s var(--ease), border-color .15s var(--ease), transform .15s var(--ease);
 }
-.social-link svg { width: 16px; height: 16px; }
-.social-link:hover { background: var(--c-primary); color: #fff; transform: translateY(-2px); }
+.social-link svg { width: 18px; height: 18px; }
+.social-link:hover { background: var(--c-primary); border-color: var(--c-primary); transform: translateY(-2px); }
 
 /* =========================================================
    Cookie consent
