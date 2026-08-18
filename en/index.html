@@ -471,6 +471,11 @@
               <label for="quote-consent">I agree that my submitted data may be used to process this request, as described in the <a href="privacy-policy.html">Privacy Policy</a>. <span class="req">*</span></label>
             </div>
 
+            <div class="field" id="quote-captcha-wrap">
+              <div class="g-recaptcha" data-sitekey="6Lfq_4stAAAAABmiAm1h4wTU3wmg9BLaTojbrN8S"></div>
+              <p class="field-error">Please confirm you are not a robot.</p>
+            </div>
+
             <button type="submit" class="btn btn-primary btn-block">Send Request</button>
             <div id="quote-form-status" class="form-status" role="status" aria-live="polite"></div>
           </form>
@@ -627,6 +632,7 @@
   </div>
 </div>
 
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script src="../js/main.js"></script>
 </body>
 </html>

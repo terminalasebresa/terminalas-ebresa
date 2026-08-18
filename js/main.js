@@ -11,6 +11,7 @@
       fieldRequired: 'Šis laukas yra privalomas.',
       consentRequired: 'Būtina patvirtinti sutikimą.',
       emailInvalid: 'Įveskite teisingą el. pašto adresą.',
+      captchaRequired: 'Patvirtinkite, kad nesate robotas.',
       formInvalid: 'Prašome patikrinti pažymėtus laukus ir bandyti dar kartą.',
       sending: 'Siunčiama…',
       success: 'Ačiū! Jūsų užklausa gauta — susisieksime artimiausiu metu.',
@@ -20,6 +21,7 @@
       fieldRequired: 'This field is required.',
       consentRequired: 'Please confirm your consent.',
       emailInvalid: 'Enter a valid email address.',
+      captchaRequired: 'Please confirm you are not a robot.',
       formInvalid: 'Please check the highlighted fields and try again.',
       sending: 'Sending…',
       success: 'Thank you! Your request has been received — we’ll get back to you shortly.',
@@ -29,6 +31,7 @@
       fieldRequired: 'To pole jest wymagane.',
       consentRequired: 'Prosimy potwierdzić zgodę.',
       emailInvalid: 'Podaj prawidłowy adres e-mail.',
+      captchaRequired: 'Potwierdź, że nie jesteś robotem.',
       formInvalid: 'Sprawdź zaznaczone pola i spróbuj ponownie.',
       sending: 'Wysyłanie…',
       success: 'Dziękujemy! Otrzymaliśmy Twoje zapytanie — skontaktujemy się wkrótce.',
@@ -243,6 +246,16 @@
         }
       });
 
+      var captchaWrap = document.getElementById('quote-captcha-wrap');
+      if (captchaWrap) {
+        if (window.grecaptcha && !grecaptcha.getResponse()) {
+          isValid = false;
+          captchaWrap.classList.add('has-error');
+        } else {
+          captchaWrap.classList.remove('has-error');
+        }
+      }
+
       if (!isValid) {
         showStatus('error', t.formInvalid);
         return;
@@ -263,6 +276,7 @@
           if (response.ok) {
             showStatus('success', t.success);
             quoteForm.reset();
+            if (window.grecaptcha) grecaptcha.reset();
           } else {
             throw new Error('Submission failed');
           }
